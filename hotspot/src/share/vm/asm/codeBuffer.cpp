@@ -322,6 +322,7 @@ void CodeSection::relocate(address at, RelocationHolder const& spec, int format)
   assert(start() <= at && at <= end()+1,
          "cannot relocate data outside code boundaries");
 
+
   if (!has_locs()) {
     // no space for relocation information provided => code cannot be
     // relocated.  Make sure that relocate is only called with rtypes
