@@ -63,6 +63,7 @@ static void copy_conjoint_atomic(const T* from, T* to, size_t count) {
   }
 }
 
+
 static void pd_fill_to_words(HeapWord* tohw, size_t count, juint value) {
   julong* to = (julong*) tohw;
   julong  v  = ((julong) value << 32) | value;
